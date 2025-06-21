@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaver, Otter, or Muskrat? | Wildlife Identifier</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Use the Inter font family defined in the head */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the decision tree container to have a minimum height */
+        #decision-tree-content {
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900">Beaver, Otter, or Muskrat?</h1>
+            <p class="text-center text-gray-600 mt-2">A simple guide to identifying these common waterside animals.</p>
+        </div>
+    </header>
+
+    <!-- Nature Respect Section -->
+    <section class="container mx-auto px-4 md:px-8 mt-8">
+        <div class="bg-emerald-100 border-l-4 border-emerald-500 text-emerald-800 p-4 rounded-lg shadow-sm" role="alert">
+            <div class="flex">
+                <div class="py-1">
+                    <!-- Leaf Icon -->
+                    <svg class="w-6 h-6 mr-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                    <p class="font-bold">A Note on Respectful Wildlife Watching</p>
+                    <p class="text-sm mt-1">Always keep a safe distance. If an animal appears stressed or changes its behavior, you are too close—please back away slowly. The goal is to observe without disturbing. Remember to leave nature as you found it. Happy, safe spotting!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto p-4 md:p-8 pt-8">
+        
+        <!-- Interactive Decision Tree Section -->
+        <section id="decision-tree" class="bg-white p-6 md:p-8 rounded-2xl shadow-lg mb-12 border border-gray-200">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Interactive Identifier</h2>
+            <div id="decision-tree-content" class="flex flex-col items-center justify-center transition-all duration-300">
+                <!-- JavaScript will populate this area -->
+            </div>
+        </section>
+
+        <!-- Infographics / Comparison Cards Section -->
+        <section id="infographics">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900">At-a-Glance Comparison</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Beaver Card -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/A0522D/FFFFFF?text=Beaver" alt="A beaver" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-amber-900">Beaver</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-amber-800">●</span><div><strong class="font-semibold">Tail:</strong> Wide, flat, paddle-like, and scaly. The most defining feature.</div></li>
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-amber-800">●</span><div><strong class="font-semibold">Body:</strong> Very large and robust (40-60+ lbs). Looks chunky.</div></li>
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-amber-800">●</span><div><strong class="font-semibold">Swimming:</strong> Swims with its head, back, and rump visible above water. A loud tail slap on the water means danger!</div></li>
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-amber-800">●</span><div><strong class="font-semibold">Signs:</strong> Look for dams, lodges made of sticks and mud, and gnawed/felled trees.</div></li>
+                            <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><div><strong class="font-semibold">Video:</strong> <a href="#" class="text-blue-600 hover:underline" onclick="event.preventDefault();">Watch a beaver swimming (placeholder)</a></div></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Otter Card -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/8B4513/FFFFFF?text=River+Otter" alt="A river otter" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-stone-800">River Otter</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-stone-700">●</span><div><strong class="font-semibold">Tail:</strong> Long, thick at the base, and tapering to a point. Used like a rudder.</div></li>
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-stone-700">●</span><div><strong class="font-semibold">Body:</strong> Long, slender, and cylindrical (10-30 lbs). Looks like a sleek tube.</div></li>
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-stone-700">●</span><div><strong class="font-semibold">Swimming:</strong> Very playful and agile. Often dives and resurfaces. Only its head is typically visible when swimming slowly.</div></li>
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-stone-700">●</span><div><strong class="font-semibold">Signs:</strong> Lives in dens near the water's edge (often old beaver lodges). Look for "slides" on muddy banks and fish scales in their droppings (scat).</div></li>
+                            <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><div><strong class="font-semibold">Video:</strong> <a href="#" class="text-blue-600 hover:underline" onclick="event.preventDefault();">Watch an otter swimming (placeholder)</a></div></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Muskrat Card -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/600x400/696969/FFFFFF?text=Muskrat" alt="A muskrat" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3 text-gray-700">Muskrat</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-gray-600">●</span><div><strong class="font-semibold">Tail:</strong> Long, thin, and flattened vertically (side-to-side). Wiggles back and forth when swimming.</div></li>
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-gray-600">●</span><div><strong class="font-semibold">Body:</strong> Small and compact, like a small cat or large rat (2-4 lbs).</div></li>
+                             <li class="flex items-start"><span class="font-bold text-lg mr-3 text-gray-600">●</span><div><strong class="font-semibold">Swimming:</strong> Often swims with its whole body, including its tail, visible on the surface.</div></li>
+                            <li class="flex items-start"><span class="font-bold text-lg mr-3 text-gray-600">●</span><div><strong class="font-semibold">Signs:</strong> Builds "huts" from cattails and reeds in marshes. Creates "runs" or channels through aquatic vegetation.</div></li>
+                            <li class="flex items-start"><svg class="w-6 h-6 mr-2 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><div><strong class="font-semibold">Video:</strong> <a href="#" class="text-blue-600 hover:underline" onclick="event.preventDefault();">Watch a muskrat swimming (placeholder)</a></div></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm mt-12 mb-6">
+        <p>&copy; 2024 Wildlife Identifier. Happy spotting!</p>
+    </footer>
+
+    <script>
+        // --- JavaScript for the Interactive Decision Tree ---
+
+        const treeContainer = document.getElementById('decision-tree-content');
+
+        // The structure for our decision tree questions and results
+        const decisionTree = {
+            start: {
+                question: "What did you get the best look at?",
+                answers: [
+                    { text: "The Tail", next: "tail_branch" },
+                    { text: "Its Body Shape & Size", next: "body_branch" },
+                    { text: "How it was Swimming", next: "swimming_branch" },
+                ]
+            },
+            // Branch 1: By Tail
+            tail_branch: {
+                question: "What did the tail look like?",
+                answers: [
+                    { text: "Wide & Flat, like a paddle", next: "result_beaver" },
+                    { text: "Long & thin, flattened side-to-side", next: "result_muskrat" },
+                    { text: "Thick at the base, tapering to a point", next: "result_otter" }
+                ]
+            },
+            // Branch 2: By Body
+            body_branch: {
+                question: "How would you describe the animal's body size and shape?",
+                answers: [
+                    { text: "Very large and robust (40-60+ lbs)", next: "result_beaver" },
+                    { text: "Long and slender (10-30 lbs)", next: "result_otter" },
+                    { text: "Small and compact (2-4 lbs)", next: "result_muskrat" }
+                ]
+            },
+            // Branch 3: By Swimming Style
+            swimming_branch: {
+                question: "How was the animal swimming?",
+                answers: [
+                    { text: "Slowly, with much of its back visible", next: "result_beaver" },
+                    { text: "Playfully, diving and surfacing often", next: "result_otter" },
+                    { text: "Quickly, with its thin tail wiggling", next: "result_muskrat" }
+                ]
+            },
+            // Results
+            result_beaver: {
+                result: "Beaver",
+                description: "This sounds like a Beaver! Key features are its large, robust body and a wide, flat, paddle-like tail. Look for nearby gnawed trees or a dam."
+            },
+            result_otter: {
+                result: "River Otter",
+                description: "It's likely a River Otter! They are identified by their long, slender bodies and a thick, tapered tail. They are also known for being playful swimmers."
+            },
+            result_muskrat: {
+                result: "Muskrat",
+                description: "You've probably spotted a Muskrat! Look for a small, compact body and a long, thin tail that is flattened vertically (side-to-side)."
+            }
+        };
+
+        // Function to render a node (question or result) in the tree
+        function renderNode(nodeId) {
+            const node = decisionTree[nodeId];
+            
+            // Clear the current content with a fade-out effect
+            treeContainer.classList.add('opacity-0');
+
+            setTimeout(() => {
+                treeContainer.innerHTML = ''; // Clear after fade
+
+                if (node.result) {
+                    // Display the final result
+                    const resultHeader = document.createElement('h3');
+                    resultHeader.className = 'text-2xl font-bold mb-2 text-green-600';
+                    resultHeader.textContent = `It's probably a ${node.result}!`;
+
+                    const resultText = document.createElement('p');
+                    resultText.className = 'text-center text-gray-600 mb-6 max-w-2xl';
+                    resultText.textContent = node.description;
+
+                    const restartButton = document.createElement('button');
+                    restartButton.className = 'bg-green-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-green-600 transition-colors shadow-md';
+                    restartButton.textContent = 'Start Over';
+                    restartButton.onclick = () => renderNode('start');
+
+                    treeContainer.appendChild(resultHeader);
+                    treeContainer.appendChild(resultText);
+                    treeContainer.appendChild(restartButton);
+
+                } else {
+                    // Display a question and answer buttons
+                    const questionText = document.createElement('h3');
+                    questionText.className = 'text-xl font-semibold text-center mb-6';
+                    questionText.textContent = node.question;
+
+                    const answersContainer = document.createElement('div');
+                    answersContainer.className = 'flex flex-wrap justify-center gap-4';
+
+                    node.answers.forEach(answer => {
+                        const button = document.createElement('button');
+                        button.className = 'bg-blue-500 text-white font-bold py-3 px-5 rounded-lg hover:bg-blue-600 transition-transform transform hover:scale-105 shadow-md';
+                        button.textContent = answer.text;
+                        button.onclick = () => renderNode(answer.next);
+                        answersContainer.appendChild(button);
+                    });
+
+                    treeContainer.appendChild(questionText);
+                    treeContainer.appendChild(answersContainer);
+                }
+
+                // Fade the new content in
+                treeContainer.classList.remove('opacity-0');
+            }, 200); // Match timeout with transition duration
+        }
+
+        // Initial render of the first question
+        window.onload = () => {
+            renderNode('start');
+        };
+    </script>
+</body>
+</html>
